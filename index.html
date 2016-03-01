@@ -3,6 +3,8 @@
 TODO
 facebook
 picture slideshow  images for few pics are 162 by 162 8bit 3kb in size - reveal js?
+library picture
+robyn tremaine picture
 current sca members
 principals pics
 academics tab
@@ -101,6 +103,11 @@ update all menus to only have bookmarks when on that page
 <link rel="stylesheet" href="css/style.css" />
 </noscript>
 <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+
+<style>
+.mySlides {display:none; width:100%; max-width:300px; align-content:center}
+</style>
+
 </head>
 <body class="homepage">
 
@@ -165,7 +172,8 @@ update all menus to only have bookmarks when on that page
 						After School Plans:
 						<a2 href="tel:17033263100" target="_blank"> 703-326-3100 </a2>
 					</p>
-					<a href="mailto:Shermin.Sirajudin@fcps.edu; Laura.Santini@fcps.edu; myperez@fcps.edu?subject=Absence" target="_blank" class="button alt">Email: Absence</a> <a href="mailto:sanajarro@fcps.edu; Laura.Santini@fcps.edu; myperez@fcps.edu?subject=After School Plans" target="_blank" class="button alt">After School Plans</a> </header>
+					<h4>Email:</h4>
+					<a href="mailto:Shermin.Sirajudin@fcps.edu; Laura.Santini@fcps.edu; myperez@fcps.edu?subject=Absence" target="_blank" class="button alt">Absence</a> <a href="mailto:sanajarro@fcps.edu; Laura.Santini@fcps.edu; myperez@fcps.edu?subject=After School Plans" target="_blank" class="button alt">After School Plans</a> </header>
 			</div>
 			<div id="gcal" class="6u">
 				<h3>What's Happening At Herndon</h3>
@@ -196,39 +204,68 @@ update all menus to only have bookmarks when on that page
 	<section class="container">
 		<div class="row flush">
 			<div class="4u">
-				<ul class="special-icons">
+				<ul class="special-icons" style="width:95%">
 					<li> <span class="fa fa-cogs"></span>
-						<h3>Perhaps twitter feed here</h3>
-						<p></p>
-						<p>something</p>
+						<h3>Find Us On Facebook</h3>
+						<div class="fb-like-box" data-href="https://www.facebook.com/HerndonES" data-width="100%" data-height="400" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="true" data-show-border="false"></div>
 					</li>
 				</ul>
 			</div>
-			<div class="4u">
-				<ul class="special-icons">
+			<div id="twitter" class="4u">
+				<ul class="special-icons" style="width:95%">
 					<li> <span class="fa fa-leaf"></span>
-						<h3>Perhaps facebook feed here</h3>
-						<p>or maybe this has some images too</p>
+						<h3>FCPS News Twitter</h3>
+<a style="width:95%" class="twitter-timeline" href="https://twitter.com/fcpsnews" data-widget-id="703632235442921472">Tweets by @fcpsnews</a>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 					</li>
 				</ul>
 			</div>
-			<div class="4u">
-				<ul class="special-icons">
+			<div id="fewpics" class="4u">
+				<ul class="special-icons" style="width:95%">
 					<li> <span class="fa fa-leaf"></span>
-						<h3>images</h3>
-						<p>image description</p>
+						<h3>A Few Pictures</h3>
+<div>
+
+<img class="mySlides" src="images/slides/1.jpg" alt="slideshow image">
+<img class="mySlides" src="images/slides/2.jpg" alt="slideshow image">
+<img class="mySlides" src="images/slides/3.jpg" alt="slideshow image">
+<img class="mySlides" src="images/slides/4.jpg" alt="slideshow image">
+<img class="mySlides" src="images/slides/5.jpg" alt="slideshow image">
+<img class="mySlides" src="images/slides/6.jpg" alt="slideshow image">
+<img class="mySlides" src="images/slides/7.jpg" alt="slideshow image">
+</div>
 					</li>
 				</ul>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000);    
+}
+</script>
+				
 			</div>
 		</div>
 	</section>
 </div>
 
 <!-- Team -->
-<div id="fewpics" class="wrapper style5">
+<div hidden="true" id="" class="wrapper style5">
 	<section class="container">
 		<header class="major">
-			<h2>Cras vitae metus aliNuam</h2>
+			<h2>TODO Delete this if unused Cras vitae metus aliNuam</h2>
 			<span class="byline">pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu</span> </header>
 		<div class="row">
 			<div class="3u"> <a href="#" class="image"><img src="images/placeholder.png" alt=""></a>
@@ -256,12 +293,12 @@ update all menus to only have bookmarks when on that page
 	<section class="container">
 		<header class="major">
 			<h2>Connect with us</h2>
-			<span class="byline">See our events on facebook or follow fcps on twitter!</span> </header>
+			<span class="byline">See Herndon Elementary events on facebook or follow fcps on twitter!</span> </header>
 		<ul class="icons">
 			<li class="active"><a href="http://facebook.com/herndones" target="_blank" class="fa fa-facebook"><span>Facebook</span></a></li>
 			<li><a href="https://twitter.com/fcpsnews" target="_blank" class="fa fa-twitter"><span>Twitter</span></a></li>
 		</ul>
-		<p>Web Designer | <a href="mailto:jmdean@fcps.edu">Josh Dean</a>
+		<p>Web Designer | <a href="mailto:jmdean@fcps.edu">Josh Dean</a></p>
 		<hr />
 	</section>
 	<!-- Copyright -->

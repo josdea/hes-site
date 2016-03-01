@@ -23,7 +23,15 @@
 <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 </head>
 <body>
-
+<style type="text/css">
+ .row { vertical-align: top; height:auto !important; }
+ .list {display:none; }
+ .show {display: none; }
+ .hide:target + .show {display: inline; }
+ .hide:target {display: none; }
+ .hide:target ~ .list {display:inline; }
+ @media print { .hide, .show { display: none; } }
+ </style>
 <!-- Header Wrapper -->
 <div class="wrapper style1"> 
 	
@@ -33,12 +41,10 @@
 			
 			<!-- Logo -->
 			<h1><a href="index.html" id="logo">HES</a></h1>
-			<nav id="nav">
+			<nav id="nav"> 
+				<script src="nav.js">
 
-<script src="nav.js">
-
-</script>
-
+</script> 
 			</nav>
 		</div>
 	</div>
@@ -46,109 +52,290 @@
 
 <!-- Main -->
 <div id="main" class="wrapper style4">
-<div class="container">
-<div class="row">
-
-<!-- Sidebar -->
-<div id="sidebar" class="4u">
-	<section>
-		<ul class="default">
-			<li><a href="#daily5">Daily 5 Language Arts</a></li>
-			<li><a href="#math">Math Info</a></li>
-			<li><a href="#library">Library Resources</a></li>
-			<li><a href="#aacademics">Advanced Academics</a></li>
-			<li><a href="#immersion">Immersion Programs</a></li>
-		</ul>
-	</section>
-</div>
-
-<!-- Content -->
-<div id="about" class="8u">
-<section>
-<header class="major">
-	<h2>Academics</h2>
-	<span id="daily5" class="byline">what we are learning and how we are learnning it!</span> </header>
-<h3>Daily 5 - Language Arts</h3>
-<p>Stuff about daily 5</p>
-<h3>Our Mission</h3>
-<p>The mission of Herndon Elementary is to develop children to their full potential by ensuring a high level of success for all students. Teachers will work to differentiate instruction, provide a safe environment, and develop goals with students. Parents and teachers will work together as a community to prepare students to become productive citizens. </p>
-<header class="minor">
-	<h3>Our Core Values and Beliefs</h3>
-</header>
-<br>
-<h4>We believe in Our Children:</h4>
-<ul style="list-style-type:circle" class ="circle">
-	<li>Each child in our building has unique qualities and the ability to learn given opportunity and encouragement.</li>
-	<li>With the proper guidance, support, and expectations our children will have high levels of achievement. </li>
-</ul>
-<h4>We believe in Our Teachers:</h4>
-<ul style="list-style-type:circle" class ="circle">
-	<li>All of our teachers are highly qualified to support, encourage, and nurture each of their students to become high achievers.</li>
-	<li>Each of our teachers will work to meet individual needs of every child. </li>
-</ul>
-<h4>We believe in Our Public Education System:</h4>
-<ul style="list-style-type:circle" class ="circle">
-	<li>In providing a balanced and well-rounded education that will foster lifelong learning in all children.</li>
-	<li>That a safe, secure, nurturing, and clean facility learning will be enjoyable and fulfilling.</li>
-</ul>
-<h4>We believe in Our Community:</h4>
-<ul style="list-style-type:circle" class ="circle">
-<li>Families are an integral part of a great educational system. </li>
-<li>We encourage the support of parents/guardians in the education of their children.</li>
-<li>Our Business partner is a valuable resource to our students and staff.</li>
-</section>
-</div>
-</div>
-</div>
+	<div class="container">
+		<div class="row"> 
+			
+			<!-- Sidebar -->
+			<div id="sidebar" class="4u">
+				<section>
+					<ul class="default">
+						<li><a href="#daily5">Daily 5 Language Arts</a></li>
+						<li><a href="#math">Math Resources</a></li>
+						<li><a href="#library">Library Resources</a></li>
+						<li><a href="#aacademics">Advanced Academics</a></li>
+						<li><a href="#immersion">Immersion Programs</a></li>
+					</ul>
+				</section>
+			</div>
+			
+			<!-- Content -->
+			<div id="daily5" class="8u">
+				<section>
+					<header class="major">
+						<h2>Academics</h2>
+						<span class="byline">what we are learning and how we are learnning it!</span> </header>
+					<h3>Daily 5 - Language Arts</h3>
+					<p>The Daily Five is a literacy structure that allows for differentiation in the classroom and provides consistency. Click here for a brief <a href="daily5.html">presentation.</a></p>
+				</section>
+			</div>
+		</div>
+	</div>
 </div>
 
 <!-- Principals -->
 <div id="math" class="wrapper style5">
 	<section class="container">
 		<header class="major">
-			<h3>Principals Bee Hive</h3>
+			<h2>Math Resources</h2>
 		</header>
-		<p>Greetings from Herndon Elementary! We are happy that you have stopped by our web site and hope that this will help you to know a little bit more about our school. Exciting things are happening here every day as our children continue to learn and grow. Enjoy your visit!</p>
-		<div class="row">
-			<div class="4u"> <a href="#" class="image"><img src="images/placeholder.png" alt=""></a>
-				<h3><a href="mailto:AMGwynn@fcps.edu">Ann Gwynn</a></h3>
-				<p>Principal</p>
+		<p>The Fairfax County Public Schools Elementary Mathematics Program of Studies reflects the national goals and incorporates the Virginia Standards of Learning. These goals include: becoming mathematical problem solvers, communicating mathematically, reasoning mathematically, and making mathematical connections.</p>
+		<div class="row double">
+			<div class="6u">
+				<header class="minor">
+					<h3>Math Links and Activites</h3>
+				</header>
+			<ol>
+					<li>
+						Lets Play At <a2 href="https://play.dreambox.com/login/qk88/dczx" target="_blank">DreamBox</a2>
+					</li>
+					<li>
+						<a2 href="https://www.khanacademy.org/" target="_blank">Khan Academy</a2>
+					</li>
+				</ol>
 			</div>
-			<div class="4u"> <a href="#" class="image"><img src="images/placeholder.png" alt=""></a>
-				<h3><a href="mailto:RECorrellus@fcps.edu">Ray Correllus</a></h3>
-				<p>Assistant Principal</p>
+			<div class="6u">
+	<header class="minor">
+					<h3>Envisons <a2 href="http://www.fcps.edu/is/textbooks/onlinetextbooks/math/envision.shtml" target="_blank">Online Math Textbook</a2></h3>
+				</header>
+			<ul>
+					<li>
+						Students in grade 3-6 will need the username and password given by the mathematics teacher.  These usernames and passwords will continue to be active until mid-August.</li>
+						<li>Students in grades K-2 will not need a username and password. </li>
+<li> It includes built-in features such as: Read Aloud, Highlighting, Dictionaries and Glossaries, Videos, and Flashcards.
+					</li>
+<li><a2 href="http://www.fcps.edu/is/textbooks/onlinetextbooks/math/envision.shtml" target="_blank">Login</a2></li>					
+				</ul>
 			</div>
-			<div class="4u"> <a href="#" class="image"><img src="images/placeholder.png" alt=""></a>
-				<h3><a href="mailto:RHMitchell@fcps.edu">Rae Mitchell</a></h3>
-				<p>Assistant Principal</p>
+			</div>
+
+	<div class="row">
+			<div class="4u"> <a href="#" class="image"><img src="images/mathdrinkwines.jpg" alt="math resource teacher"></a>
+				<h3><a2 href="mailto:SADrinkwine@fcps.edu">Stephanie Drinkwine</a2></h3>
+				<p>Math Resource Teacher</p>
+			</div>
+			<div class="4u"> <a href="#" class="image"><img src="images/mathgrahamj.jpg" alt="math resource teacher"></a>
+				<h3><a2 href="mailto:JAGraham@fcps.edu">Jamie Graham</a2></h3>
+				<p>Math Resource Teacher</p>
+			</div>
+						<div class="4u"> <a href="#" class="image"><img src="images/mathtremainer.jpg" alt="math resource teacher"></a>
+				<h3><a2 href="mailto:rrtremaine@fcps.edu">Robyn Tremaine</a2></h3>
+				<p>Math Resource Teacher</p>
 			</div>
 		</div>
 	</section>
 </div>
 
-<!-- Section Three -->
-<div id = "library" class="wrapper style4">
-	<section class="container">
-		<header class="major">
-			<h2>Library Resources</h2>
-		</header>
-		<div class="row flush">
-			<p>Stuff about the library</p>
-			<p>To search on your phone or tablet: go to your menu and click "find in page", then type a name</p>
-			<br>
-		</div>
-	</section>
-</div>
+<!-- section three again -->
+<div id="library" class="wrapper style4">
+				<section class="container">
+					<header class="major">
+						<h2>Library Resources</h2>
+						<span class="byline">Reading - Each and Every Day!</span>
+					</header>
+					<div class="row flush">
+						<div class="4u">
+							<ul class="special-icons">
+									<li> <span class="fa fa-cogs"></span>
+							<h3>Library Links</h3>
+							<ul>
+								<a href="http://libcat.fcps.edu/uhtbin/cgisirsi/x/0/0/57/49?user_id=276WEB" target="_blank">
+								<li>HES Library Catalog</li>
+								</a> <a href="http://www.fcps.edu/is/libraryservices/onlinedatabases.shtml" target="_blank">
+								<li>Library Databases</li>
+								</a> <a href="http://www.fcps.edu/is/libraryservices/books.shtml" target="_blank">
+								<li>FCPS Digital eBooks</li>
+								</a> <a href="javascript:open_win('http://fcplcat.fairfaxcounty.gov/uhtbin/cgisirsi/x/ZTECHOPS/0/60/1180/X')" target="_blank">
+								<li>Fairfax County Public Library</li>
+								</a>
+							</ul>
+						</li>
+								<li> <span class="fa fa-cogs"></span>
+							<h3>Typing Skills</h3>
+							<ul>
+								<li><a href="http://typing-speed-test.aoeu.eu/" target="_blank">Online Typing Test</a> </li>
+								<li><a href="http://www.typingclub.com/typing-qwerty-en.html" target="_blank">Typing Club</a> </li>
+								<li><a href="http://www.bbc.co.uk/schools/typing/" target="_blank">Dance Mat   Typing </a></li>
+								<li><a href="http://typing.weebly.com/typing-games.html" target="_blank">Typing Games</a></li>
+								<li><a href="http://www.freewebs.com/weddell/findtheletter.html" target="_blank">K/1 Typing - find the letter</a></li>
+								<li><a href="http://www.kidsnetsoft.com/html/typing.html" target="_blank">Typing Resource</a></li>
+								<li><a href="http://www.tvokids.com/games/keyboardclimber" target="_blank">TVOKids Typing Game</a></li>
+							</ul>
+						</li>
+								
+							</ul>
+						</div>
+						<div class="4u">
+							<ul class="special-icons">
+								<li> <span class="fa fa-leaf"></span>
+							<h3>Grade Level Resources</h3>
+							<div class="row"> <a href="#hide1" class="hide" id="hide1">&nbsp;Pre-K, K, and 1st</a> <a href="#show1" class="show" id="show1">&nbsp;Hide</a>
+								<div class="list">
+									<ul>
+										<li><a href="http://www.worldbookonline.com/ewol/home" target="_blank">Early World of Learning</a> by World Book</li>
+										<li><a href="http://www.pebblego.com/login.php?sqs=429fc4eb45bf087c99b6a3c7553c3b1f71063837cfc4a93aa3a021072de7bfe6" target="_blank">Pebble Go</a> by Capstone</li>
+										<li><a href="http://www.worldbookonline.com/kids/home" target="_blank">World Book Kids</a> by World Book</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row"> <a href="#hide2" class="hide" id="hide2">&nbsp;2nd Grade</a> <a href="#show2" class="show" id="show2">&nbsp;Hide</a>
+								<div class="list">
+									<ul>
+										<li><a href="http://ama.grolier.com/" target="_blank">Amazing Animals of the World</a> by Grolier</li>
+										<li><a href="http://www.worldbookonline.com/ewol/home" target="_blank">Early World of Learning</a> by World Book</li>
+										<li><a href="http://www.worldbookonline.com/digitallibraries/earlypeoples/home" target="_blank">Early  Peoples</a> by World Book</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Exploring-Earth-and-Space-Science.33" target="_blank">Exploring  Earth and Space Science</a> by Marshall  Cavendish</li>
+										<li><a href="http://go.grolier.com/page?tn=/dictionary/lookup.html&amp;dictionary=AHCD&amp;searchtype=lookup" target="_blank">Grolier Online Dictionary</a> by Grolier</li>
+										<li><a href="http://go-kids.grolier.com/" target="_blank">Grolier Online Kids</a> by Grolier</li>
+										<li><a href="http://go-passport.grolier.com/" target="_blank">Grolier Passport</a> by Grolier</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Growing-Up-with-Science.6" target="_blank">Growing  Up with Science</a> by Marshall Cavendish</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Habitats-of-the-World.39" target="_blank">Habitats  of the World</a> by Marshall Cavendish</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/International-Wildlife.15" target="_blank">International  Wildlife</a> by Marshall Cavendish</li>
+										<li><a href="http://galenet.galegroup.com/servlet/KidsInfoBits;jsessionid=9DACEF0C9FAB0CD6A95D8B510C0C4EBD?locID=fairfaxcps" target="_blank">Kids  InfoBits</a> by Gale</li>
+										<li><a href="http://www.pebblego.com/login.php?sqs=429fc4eb45bf087c99b6a3c7553c3b1f71063837cfc4a93aa3a021072de7bfe6" target="_blank">Pebble Go</a> by Capstone</li>
+										<li><a href="http://www.worldbookonline.com/kids/home" target="_blank">World Book Kids</a> by World Book</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row"> <a href="#hide3" class="hide" id="hide3">&nbsp;3rd Grade</a> <a href="#show3" class="show" id="show3">&nbsp;Hide</a>
+								<div class="list">
+									<ul>
+										<li><a href="http://ama.grolier.com/" target="_blank">Amazing Animals of the World</a> by Grolier</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Ancient-and-Medieval-World.52" target="_blank">Ancient  and Medieval World</a> by Marshall Cavendish</li>
+										<li><a href="http://ic.galegroup.com/ic/bic1/home" target="_blank">Biography In Context</a> by Gale</li>
+										<li><a href="http://www.worldbookonline.com/ewol/home" target="_blank">Early World of Learning</a> by World Book</li>
+										<li><a href="http://www.worldbookonline.com/digitallibraries/earlypeoples/home" target="_blank">Early  Peoples</a> by World Book</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Earth-and-Physical-Sciences.2" target="_blank">Earth  and Physical Sciences</a> by Marshall Cavendish</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Exploring-Ancient-Civilizations.17" target="_blank">Exploring  Ancient Civilizations</a> by Marshall Cavendish</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Exploring-Earth-and-Space-Science.33" target="_blank">Exploring  Earth and Space Science</a> by Marshall  Cavendish</li>
+										<li><a href="http://go.grolier.com/page?tn=/dictionary/lookup.html&amp;dictionary=AHCD&amp;searchtype=lookup" target="_blank">Grolier Online Dictionary</a> by Grolier</li>
+										<li><a href="http://go-kids.grolier.com/" target="_blank">Grolier Online Kids</a> by Grolier</li>
+										<li><a href="http://go-passport.grolier.com/" target="_blank">Grolier Passport</a> by Grolier</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Growing-Up-with-Science.6" target="_blank">Growing  Up with Science</a> by Marshall Cavendish</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Habitats-of-the-World.39" target="_blank">Habitats  of the World</a> by Marshall Cavendish</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Insects-and-Spiders-of-the-World.51" target="_blank">Insects and Spiders of the World</a> by Marshall Cavendish</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/International-Wildlife.15" target="_blank">International  Wildlife</a> by Marshall Cavendish</li>
+										<li><a href="http://galenet.galegroup.com/servlet/KidsInfoBits;jsessionid=9DACEF0C9FAB0CD6A95D8B510C0C4EBD?locID=fairfaxcps" target="_blank">Kids  InfoBits</a> by Gale</li>
+										<li><a href="http://lp.grolier.com/" target="_blank">Lands and Peoples</a> by Grolier</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Life-Sciences.8" target="_blank">Life  Sciences</a> by Marshall Cavendish</li>
+										<li><a href="http://www.pebblego.com/login.php?sqs=429fc4eb45bf087c99b6a3c7553c3b1f71063837cfc4a93aa3a021072de7bfe6" target="_blank">Pebble Go</a> by Capstone</li>
+										<li><a href="http://www.worldbookonline.com/kids/home" target="_blank">World Book Kids</a> by World Book</li>
+										<li><a href="http://www.worldbookonline.com/student/home?null&amp;gr=Welcome+Fairfax+County+Public+Schools" target="_blank">World  Book Student</a> by World Book</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row"> <a href="#hide4" class="hide" id="hide4">&nbsp;4th Grade</a> <a href="#show4" class="show" id="show4">&nbsp;Hide</a>
+								<div class="list">
+									<ul>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/America-in-the-20th-Century.53" target="_blank">America  in the 20th Century</a> by Marshall Cavendish</li>
+										<li><a href="http://atb.grolier.com/" target="_blank">America the Beautiful</a> by Grolier</li>
+										<li><a href="http://www.marshallcavendishdigital.com/mcdigitalhome" target="_blank">Ancient  and Medieval World</a> by Marshall Cavendish</li>
+										<li><a href="http://ic.galegroup.com/ic/bic1/home" target="_blank">Biography In Context</a> by Gale</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Civil-War.62" target="_blank">Civil  War</a> by Marshall Cavendish</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Colonial-America.61" target="_blank">Colonial  America</a> by Marshall Cavendish</li>
+										<li><a href="http://online.culturegrams.com/index.php" target="_blank">CultureGrams</a> by Proquest</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Earth-and-Physical-Sciences.2" target="_blank">Earth  and Physical Sciences</a> by Marshall Cavendish</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Exploring-Ancient-Civilizations.17" target="_blank">Exploring  Ancient Civilizations</a> by Marshall Cavendish</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Exploring-Earth-and-Space-Science.33" target="_blank">Exploring  Earth and Space Science</a> by Marshall  Cavendish</li>
+										<li><a href="http://go.grolier.com/page?tn=/dictionary/lookup.html&amp;dictionary=AHCD&amp;searchtype=lookup" target="_blank">Grolier Online Dictionary</a> by Grolier</li>
+										<li><a href="http://go-kids.grolier.com/" target="_blank">Grolier Online Kids</a> by Grolier</li>
+										<li><a href="http://go-passport.grolier.com/" target="_blank">Grolier Passport</a> by Grolier</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Growing-Up-with-Science.6" target="_blank">Growing  Up with Science</a> by Marshall Cavendish</li>
+										<li><a href="http://galenet.galegroup.com/servlet/KidsInfoBits;jsessionid=9DACEF0C9FAB0CD6A95D8B510C0C4EBD?locID=fairfaxcps" target="_blank">Kids  InfoBits</a> by Gale</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Life-Sciences.8" target="_blank">Life  Sciences</a> by Marshall Cavendish</li>
+										<li><a href="http://www.worldbookonline.com/kids/home" target="_blank">World Book Kids</a> by World Book</li>
+										<li><a href="http://www.worldbookonline.com/student/home?null&amp;gr=Welcome+Fairfax+County+Public+Schools" target="_blank">World  Book Student</a> by World Book</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row"> <a href="#hide5" class="hide" id="hide5">&nbsp;5th Grade</a> <a href="#show5" class="show" id="show5">&nbsp;Hide</a>
+								<div class="list">
+									<ul>
+										<li><a href="http://www.marshallcavendishdigital.com/mcdigitalhome" target="_blank">Ancient  and Medieval World</a> by Marshall Cavendish</li>
+										<li><a href="http://ic.galegroup.com/ic/bic1/home" target="_blank">Biography In Context</a> by Gale</li>
+										<li><a href="http://www.worldbookonline.com/ewol/home" target="_blank">Early World of Learning</a> by World Book</li>
+										<li><a href="http://www.worldbookonline.com/digitallibraries/earlypeoples/home" target="_blank">Early  Peoples</a> by World Book</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Earth-and-Physical-Sciences.2" target="_blank">Earth  and Physical Sciences</a> by Marshall Cavendish</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Exploring-Ancient-Civilizations.17" target="_blank">Exploring  Ancient Civilizations</a> by Marshall Cavendish</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Exploring-Earth-and-Space-Science.33" target="_blank">Exploring  Earth and Space Science</a> by Marshall  Cavendish</li>
+										<li><a href="http://infotrac.galegroup.com/itweb/fairfaxcps?db=GVRL.global" target="_blank">Global  Awareness Project Resources</a> by Gale</li>
+										<li><a href="http://go.grolier.com/page?tn=/dictionary/lookup.html&amp;dictionary=AHCD&amp;searchtype=lookup" target="_blank">Grolier Online Dictionary</a> by Grolier</li>
+										<li><a href="http://go-kids.grolier.com/" target="_blank">Grolier Online Kids</a> by Grolier</li>
+										<li><a href="http://go-passport.grolier.com/" target="_blank">Grolier Passport</a> by Grolier</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Growing-Up-with-Science.6" target="_blank">Growing  Up with Science</a> by Marshall Cavendish</li>
+										<li><a href="http://galenet.galegroup.com/servlet/KidsInfoBits;jsessionid=9DACEF0C9FAB0CD6A95D8B510C0C4EBD?locID=fairfaxcps" target="_blank">Kids  InfoBits</a> by Gale</li>
+										<li><a href="http://lp.grolier.com/" target="_blank">Lands and Peoples</a> by Grolier</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Life-Sciences.8" target="_blank">Life  Sciences</a> by Marshall Cavendish</li>
+										<li><a href="http://www.worldbookonline.com/student/home?null&amp;gr=Welcome+Fairfax+County+Public+Schools" target="_blank">World  Book Student</a> by World Book</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row"> <a href="#hide6" class="hide" id="hide6">&nbsp;6th Grade</a> <a href="#show6" class="show" id="show6">&nbsp;Hide</a>
+								<div class="list">
+									<ul>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/America-in-the-20th-Century.53" target="_blank">America  in the 20th Century</a> by Marshall Cavendish</li>
+										<li><a href="http://americangovernment.abc-clio.com/?setcustomercontext=14472&amp;webSiteCode=SLN_AMGOV&amp;returnToPage=%2f%3fsetcustomercontext%3d14472&amp;token=6C2E6C86DF366FDC213D72D09AA5D0F1&amp;casError=False" target="_blank">American  Government</a> by ABC-CLIO</li>
+										<li><a href="http://americanhistory.abc-clio.com/?setcustomercontext=14472&amp;webSiteCode=SLN_AMHIST&amp;returnToPage=%2f%3fsetcustomercontext%3d14472&amp;token=6C2E6C86DF366FDC213D72D09AA5D0F1&amp;casError=False" target="_blank">American  History</a> by ABC-CLIO</li>
+										<li><a href="http://ic.galegroup.com/ic/bic1/home" target="_blank">Biography In Context</a> by Gale</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Civil-War.62" target="_blank">Civil  War</a> by Marshall Cavendish</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Colonial-America.61" target="_blank">Colonial  America</a> by Marshall Cavendish</li>
+										<li><a href="http://www.worldbookonline.com/digitallibraries/earlypeoples/home" target="_blank">Early  Peoples</a> by World Book</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Earth-and-Physical-Sciences.2" target="_blank">Earth  and Physical Sciences</a> by Marshall Cavendish</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Exploring-Earth-and-Space-Science.33" target="_blank">Exploring  Earth and Space Science</a> by Marshall  Cavendish</li>
+										<li><a href="http://go.grolier.com/page?tn=/dictionary/lookup.html&amp;dictionary=AHCD&amp;searchtype=lookup" target="_blank">Grolier Online Dictionary</a> by Grolier</li>
+										<li><a href="http://go-kids.grolier.com/" target="_blank">Grolier Online Kids</a> by Grolier</li>
+										<li><a href="http://go-passport.grolier.com/" target="_blank">Grolier Passport</a> by Grolier</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Growing-Up-with-Science.6" target="_blank">Growing  Up with Science</a> by Marshall Cavendish</li>
+										<li><a href="http://galenet.galegroup.com/servlet/KidsInfoBits;jsessionid=9DACEF0C9FAB0CD6A95D8B510C0C4EBD?locID=fairfaxcps" target="_blank">Kids  InfoBits</a> by Gale</li>
+										<li><a href="http://www.marshallcavendishdigital.com/encnav/Supreme-Court-Milestones.34" target="_blank">Supreme  Court Milestones</a> by Marshall Cavendish </li>
+										<li><a href="http://www.worldbookonline.com/student/home?null&amp;gr=Welcome+Fairfax+County+Public+Schools" target="_blank">World  Book Student</a> by World Book</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+								
+							</ul>
+						</div>
+						<div class="4u">
+							<ul class="special-icons">
+								<li> <span class="fa fa-wrench"></span>
+							<h3>Our Librarian</h3>
+							<div class="6u"> <a href="#" class="image"><img src="images/librarian.jpg" alt="librarian"></a>
+								<h4><a2 href="mailto:nwbronez@fcps.edu">Nancy Bronez</a2></h4>
 
-<!-- Principals -->
+							</div>
+						</li>
+									<li> <span class="fa fa-wrench"></span>
+							<h3>Our Library</h3>
+<p><img src="images/library1.jpg" width="95%" alt="HES library"></p>
+
+						</li>
+								
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+		
+
+<!-- Advanced Academics-->
 <div id="aacademics" class="wrapper style5">
 	<section class="container">
 		<header class="major">
-			<h3>Advanced Academics</h3>
+			<h2>Advanced Academics</h2>
 		</header>
 		<h4>Stuff goes here</h4>
 		<ul style="list-style-type:circle" class ="circle">
-			<li>Provide services and activities for the school and community</li>
+			<li>Waiting for Gibson</li>
 		</ul>
 		<div class="row">
 			<div class="4u"> <a href="#" class="image"><img src="images/placeholder.png" alt=""></a>
@@ -174,24 +361,46 @@
 		</div>
 	</section>
 </div>
+<div id = "immersion" class="wrapper style2">
+	<section class="container">
+		<header class="major">
+			<h2>Immersion Programs</h2>
+		</header>
+		<div class="row flush">
+<h3>Spanish Two-Way Immersion</h3>
+
+<p>Herndon Elementary School students are able to learn Spanish through the two-way immersion program that begins in kindergarten. The students who participate in these programs come from one of two language backgrounds. Half of the students in the class come from families whose native language is English, and the other half from families whose native language is Spanish. The program focuses on the development of literacy and content area skills in English and Spanish. </p>
+<p>The children are taught half of the school day in English and the other half in Spanish. The students who speak English learn literacy skills that are currently taught in English as well as literacy skills taught in Spanish. Through this exposure, they acquire the Spanish language. Students who speak Spanish are developing English language skills while also developing literacy and content area skills in their home language. The program mutually benefits both student populations as they can serve as peer language role models for each other. The curriculum follows the Fairfax County Public Schools Program of Studies.</p>
+
+<h3>French Partial Immersion Program at Herndon Elementary School (2016-2017 will be grades. 4-6 only)</h3>
+
+<p>Program Model: In Fairfax County Public Schools (FCPS), students learn mathematics, science, and health through the medium of a world language (French, German, Japanese or Spanish). Half the school day is spent learning in the world language. Students receive instruction in English for language arts and social studies during the other half of the day. Math, science, and health were chosen for the beginning years of development of the world language because they use manipulative and concrete, hand-on activities, both of which help with the natural second language acquisition process. The world language immersion teacher teams with the grade-level English teachers to integrate the total FCPS curriculum.  <a href="http://www.fcps.edu/is/worldlanguages/immersion.shtml" target="_blank">FCPS World Languages Page</a>.</p>
+
+<h4>Teacher Interns from France</h4>
+<p>Through a partnership with <a href="http://www.espe-auvergne.fr" target="_blank">L’École Supérieure du Professorat et de l’Éducation (ÉSPÉ)</a> Clermont-Auvergne, France, our teachers, students, and families have the opportunity to interact with teacher interns from France. Interns instruct in our classrooms. Host families share their homes, establishing personal links with these special guests.</p>
+		</div>
+	</section>
+</div>
 
 <!-- Footer -->
 <div id="footer">
 	<section class="container">
 		<header class="major">
 			<h2>Connect with us</h2>
-			<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span> </header>
+			<span class="byline">See Herndon Elementary events on facebook or follow fcps on twitter!</span> </header>
 		<ul class="icons">
-			<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-			<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-			<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
-			<li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
+			<li class="active"><a href="http://facebook.com/herndones" target="_blank" class="fa fa-facebook"><span>Facebook</span></a></li>
+			<li><a href="https://twitter.com/fcpsnews" target="_blank" class="fa fa-twitter"><span>Twitter</span></a></li>
 		</ul>
+		<p>Web Designer | <a href="mailto:jmdean@fcps.edu">Josh Dean</a></p>
 		<hr />
 	</section>
-	
 	<!-- Copyright -->
-	<div id="copyright"> Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>) </div>
+	
+	<div id="copyright" class="minor">
+		<p>This web page contains links to one or more web pages that are outside the FCPS network <br>
+			FCPS does not control the content or relevancy of these pages</p>
+		Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>) </div>
 </div>
 </body>
 </html>
